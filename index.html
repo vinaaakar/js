@@ -1,0 +1,48 @@
+<input id="a">
+<input id="b"><br>
+<button onclick="add()">add</button><br>
+<button onclick="subtract()">subtract</button><br>
+<button onclick="multiplication()">multiplication</button><br>
+<button onclick="division()">division</button>
+<p id="result">add</p>
+<p id="c">subtract</p>
+<p id="d">multiplication</p>
+<p id="e">division</p>
+<script>
+    function add(){
+        var box1=document.getElementById('a')
+        var box2=document.getElementById('b')
+        var result=document.getElementById('result')
+        var box1value=Number(box1.value)
+        var box2value=Number(box2.value)
+        total=box1value+box2value
+        result.textContent=total
+    }
+    function subtract(){
+        var box1=document.getElementById('a')
+        var box2=document.getElementById('b')
+        var result=document.getElementById('result')
+        var box1value=Number(box1.value)
+        var box2value=Number(box2.value)
+        total=box1value-box2value
+        c.textContent=total
+    }
+    function multiplication(){
+        var box1=document.getElementById('a')
+        var box2=document.getElementById('b')
+        var result=document.getElementById('result')
+        var box1value=Number(box1.value)
+        var box2value=Number(box2.value)
+        total=box1value*box2value
+        d.textContent=total
+    }
+    function division(){
+        var box1=document.getElementById('a')
+        var box2=document.getElementById('b')
+        var result=document.getElementById('result')
+        var box1value=Number(box1.value)
+        var box2value=Number(box2.value)
+        total=box1value/box2value
+        e.textContent=total
+    }
+</script>
